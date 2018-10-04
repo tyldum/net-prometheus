@@ -134,6 +134,7 @@ sub _set_function_child
    my $self = shift;
    my ( $labelkey, $func ) = @_;
 
+   $self->{values}{$labelkey} = undef;
    $self->{functions}{$labelkey} = $func;
 }
 
